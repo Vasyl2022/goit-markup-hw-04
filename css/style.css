@@ -157,7 +157,20 @@ address {
 .contact-phone-link:hover,
 .contact-phone-link:focus {
   color: #188ce8;
+} 
+
+.email-icons {
+  fill: currentColor;
 }
+
+.contact-email-link {
+  width: 100%;
+  height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
 
 /* hero -----------------*/
 
@@ -166,6 +179,15 @@ address {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+  url(../images/hero_back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -261,13 +283,34 @@ address {
 }
 
 
-.advences-list {
+.advences-icons-list {
+  margin-bottom: 30px;
+}
+
+.advences-icons-link {
+  width: 100%;
+  height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.advances-icon-items {
+ width: 270px;
+ height: 120px;
+ background-color: #F5F4FA;
+ background: #F5F4FA;
+border-radius: 4px;
+}
+
+.advences-icons-list {
   display: flex;
   gap: 30px;
 }
 
-.advences-item {
-  width: 270px;
+.advences-list {
+  display: flex;
+  gap: 30px;
 }
 
 .section-title {
@@ -313,9 +356,87 @@ gap: 30px;
   font-size: 16px;
   line-height: 1.19;
   color: var(--secondary-text-color);
+  margin-bottom: 16px;
 }
 
-/* footer--- */
+.teams-soc-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teams-soc-items {
+  width: 44px;
+  height: 44px;
+  color: #AFB1B8;
+}
+
+.teams-soc-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.teams-soc-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  fill: #AFB1B8;
+  background-color: #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.teams-soc-link:hover,
+.teams-soc-link:focus {
+  fill: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+/* clients----------------------------- */
+
+.clients {
+  background-color: #fff;
+  padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+.clients-icons-list {
+  margin-top: 50px;
+}
+
+.clients-icons-link {
+  width: 100%;
+  height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+fill: #AFB1B8;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+}
+
+.clients-icons-items {
+ width: 170px;
+ height: 92px;
+ background-color: #fff;
+ 
+}
+
+.clients-icons-list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients-icons-link:hover,
+.clients-icons-link:focus {
+  fill: #2196F3;
+  background-color: var(--white-text-color);
+  border: 1px solid #2196F3;
+}
+
+
+/* footer---------------------------------- */
 
 .address {
   line-height: 1.71;
@@ -333,6 +454,57 @@ margin: 0;
 
 .contact-email-down {
   margin-bottom: 9px;
+}
+
+.join {
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--white-text-color);
+  margin-bottom: 20px;
+  display: flex;
+}
+
+
+
+.contacts {
+  width: 300px;
+}
+
+
+.footer-soc {
+  display: flex;
+}
+
+.join-soc-list {
+  display: flex;
+}
+
+.join-soc-items {
+  width: 44px;
+  height: 44px;
+  color: #AFB1B8;
+}
+
+.join-soc-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+
+.join-soc-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  fill: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-soc-link:hover,
+.join-soc-link:focus {
+  fill: var(--white-text-color);
+  background-color: var(--accent-color);
 }
 
 /* portfolio --------------------------------*/
@@ -356,6 +528,11 @@ margin: 0;
 }
 
 
+.examples-item {
+  box-shadow: 0px 1px 3px rgb(0 0 0 /12%),
+  0px 1px 1px rgb(0 0 0 /6%),
+  0px 2px 1px rgb(0 0 0 /16%);
+}
 
 .examples > .examples-item {
   flex-basis: calc((100% - 60px) / 3);
@@ -385,6 +562,9 @@ margin-right: 0;
 .examples-btn:focus {
   color: var(--white-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 1px 3px rgb(0 0 0 /12%),
+  0px 1px 1px rgb(0 0 0 /14%),
+  0px 2px 1px rgb(0 0 0 /20%);
 }
 
 .examples-content {
@@ -455,3 +635,4 @@ margin-right: 0;
   margin-bottom: 50px;
  }
 
+ 
