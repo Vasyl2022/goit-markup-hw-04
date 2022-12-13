@@ -147,6 +147,8 @@ address {
   font-weight: 500;
   line-height: 1.71;
   color: var(--secondary-text-color);
+  display: flex;
+  align-items: center;
 }
 
 .contact-email-link:hover,
@@ -161,7 +163,10 @@ address {
 
 .email-icons {
   fill: currentColor;
+  margin-right: 10px;
+  
 }
+
 
 .contact-email-link {
   width: 100%;
@@ -636,4 +641,6 @@ margin-right: 0;
   margin-bottom: 50px;
  }
 
- 
+ .footer-soc {
+  align-items: baseline;
+ }
